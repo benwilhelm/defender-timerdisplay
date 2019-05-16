@@ -26,7 +26,7 @@ class Fullscreen_Window:
 
         self.label = Label(
             self.frame,
-            text="60:00",
+            text="--:--",
             font=("Courier", 150),
             fg="white",
             bg="black",
@@ -75,6 +75,6 @@ def secToDisplay(t):
     m_ones = int(minutes % 10)
     m_tens = int(minutes / 10)
 
-    return f'{m_tens}{m_ones}:{s_tens}{s_ones}'
+    return str(m_tens) + str(m_ones) + ':' + str(s_tens) + str(s_ones)
 
 signal.signal(signal.SIGINT, close_app)
