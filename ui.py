@@ -65,7 +65,6 @@ def close_app(sig=None, frame=None):
     app.tk.destroy()
 
 def secToDisplay(t):
-    print(t)
     seconds = int(t % 60)
     minutes = int(t / 60)
 

@@ -6,11 +6,12 @@ sio = socketio.Client()
 
 server_url = getenv('SERVER_URL') or "http://localhost:1337"
 sio.connect(server_url)
-sio.emit('joinLaunchTimer')
 
 @sio.on('connect')
 def on_connect():
+    sio.emit('joinLaunchTimer')
     print('connected')
+
 
 @sio.on('disconnect')
 def on_disconnect():
