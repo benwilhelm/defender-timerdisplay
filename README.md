@@ -1,4 +1,4 @@
-# Headless Timer Display for Launch Timer Video Feed
+# Headless Display for Launch Timer Video Feed
 
 ## What's this
 
