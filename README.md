@@ -2,7 +2,7 @@
 
 ## What's this
 
-This is a python app that runs in xterm, allowing us to send a display of the launch timer to the video computer to be mixed into the big board display. It replaces the web based version so that it can be configured to run on boot without a keyboard or mouse attached to the pi.
+This is a python app that runs in xterm, allowing us to send a display of the launch timer to the video computer to be mixed into the big board display. It replaces the browser based version so that it can be configured to run on boot without a keyboard or mouse attached to the pi. We then simply send the HDMI feed to the video computer as an input.
 
 ## Installation
 
