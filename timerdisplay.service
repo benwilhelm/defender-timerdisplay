@@ -1,0 +1,12 @@
+# Symlink this file to
+# /etc/systemd/system/leaderboard
+
+[Unit]
+Description=Leaderboard Service
+After=network.target
+
+[Service]
+ExecStart=/bin/sh -ce "xinit /opt/defenders/timerdisplay/openbox.sh >> /var/log/timer.log 2>&1"
+
+[Install]
+WantedBy=multi-user.target

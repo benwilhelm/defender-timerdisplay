@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source venv/bin/activate
-source env.sh
-./timer.py
+source /opt/defenders/timerdisplay/venv/bin/activate
+source /opt/defenders/timerdisplay/env.sh
+/opt/defenders/timerdisplay/timer.py
 
