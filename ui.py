@@ -27,8 +27,8 @@ class Fullscreen_Window:
         self.label = Label(
             self.frame,
             text="60:00",
-            font=("Courier", 150),
-            fg="white",
+            font=("PCBius", 150),
+            fg="#85c087",
             bg="black",
             pady=100
         )
