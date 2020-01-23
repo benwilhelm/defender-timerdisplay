@@ -9,6 +9,7 @@ server_url = getenv('SERVER_URL') or "http://localhost:1337"
 @sio.on('connect')
 def on_connect():
     sio.emit('joinLaunchTimer')
+    sio.emit('rollcall', { "clientName": "timerdisplay" })
     print('connected')
 
 
